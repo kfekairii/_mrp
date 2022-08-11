@@ -34,13 +34,13 @@ jobs:
       # Runs a single command using the runners shell
       - name: Build API
         run: |
-          docker build ./api -t digitrans/releasin_api:0.1.0
+          docker build ./api -t digitrans/mrp_api:0.1.0
       - name: Build WEB
         run: |
-          docker build ./web -t digitrans/releasin_web:0.1.0
+          docker build ./web -t digitrans/mrp_web:0.1.0
       - name: Docker Push
         run: |
-          docker push digitrans/releasin_api:0.1.0
-          docker push digitrans/releasin_web:0.1.0
+          docker push digitrans/mrp_api:0.1.0
+          docker push digitrans/mrp_web:0.1.0
           
           
