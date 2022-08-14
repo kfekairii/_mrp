@@ -20,7 +20,7 @@ services:
     volumes:
       - ./api:/app
       - ./app/node_modules
-    command: yarn start:migrate:dev
+    command: yarn start:dev
     depends_on:
       - postgres
     environment:
