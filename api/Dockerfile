@@ -6,7 +6,7 @@ WORKDIR /app
 
 COPY package.json .
 COPY yarn.lock .
-# COPY prisma ./prisma/
+COPY prisma ./prisma/
 
 RUN yarn 
 
